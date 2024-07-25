@@ -5,7 +5,6 @@ import SkillsSection from "./components/skills/page";
 import ExperienceEducationSection from "./components/education/page";
 import Portfolio from "./components/portfolio/page";
 import Contact from "./components/contact/page";
-import BlogList from "./components/blogs/page";
 // import ParticleBackground from "../app/components/particle_bg";
 // import { Suspense } from 'react';
 // import dynamic from "next/dynamic";
@@ -16,8 +15,7 @@ import BlogList from "./components/blogs/page";
 
 export default function Home() {
   return (
-    <>
-    {/* <ParticleBackground /> */}
+    
     <main className="relative z-10">
       <Header />
       <AboutSection />
@@ -25,8 +23,8 @@ export default function Home() {
       <ExperienceEducationSection />
       <Portfolio />
       <Contact />
-      {/* <BlogList /> */}
+      
     </main>
-  </>
+  
   );
 }
