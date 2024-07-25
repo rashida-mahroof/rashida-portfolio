@@ -1,7 +1,7 @@
 
 "use client"
 
-import img from '../../../public/img.JPG';
+import img from '../../../public/me.png';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
@@ -55,13 +55,13 @@ export default function Header() {
 
     return (
         <header id="home" className=" text-white min-h-screen flex items-center relative">
-            <div className="container mx-auto px-4 py-12 lg:py-0 flex flex-col lg:flex-row items-center justify-between">
+            <div className="container mx-auto px-4 py-12 lg:py-0 flex flex-col lg:flex-row items-center justify-between animate-slideUp">
                 <div className="lg:w-1/3 mb-8 lg:mb-0 relative w-full max-w-sm group">
                     {/* Background card */}
                     <div className="absolute top-0 left-0 w-full h-full bg-yellow-400 transform -rotate-6 transition-all duration-300 group-hover:rotate-0 group-hover:scale-105"></div>
 
                     {/* Image wrapper */}
-                    <div className="relative z-10 overflow-hidden rounded-lg">
+                    <div className="relative z-10 overflow-hidden rounded-lg ">
                         <Image
                             src={img}
                             alt="Rashida"
@@ -75,7 +75,7 @@ export default function Header() {
                         
                     </div>
                 </div>
-                <div className="lg:w-1/2 text-center lg:text-left">
+                <div className="lg:w-1/2 text-center lg:text-left animate-slideUp">
                     <h1 className="text-3xl md:text-4xl font-bold mb-4">I'M <span className='text-yellow-400'>Rashida Mahroof.</span></h1>
                     <Typewriter
                         options={{
@@ -89,6 +89,7 @@ export default function Header() {
                     <p className="mb-8 max-w-md mx-auto lg:mx-0 text-sm md:text-base">
                         Passionate about crafting seamless digital experiences. Specializing in full-stack web development and cross-platform mobile applications.
                     </p>
+                    
                     <button onClick={()=>scrollToSection('about')}  className="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition duration-300 uppercase tracking-wider text-sm md:text-base">
                          More About Me
                     </button>

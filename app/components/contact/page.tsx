@@ -3,8 +3,8 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBuilding, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faFacebook, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import MainTitle from '../title/page';
+import Socials from '../socials/page';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,10 +21,25 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission, e.g., send data to an API or email service
-    console.log('Form data submitted:', formData);
+    try {
+      const response = await fetch('../api/send-mail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log('Email sent successfully');
+      } else {
+        console.error('Error sending email');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+    }
   };
 
   return (
@@ -50,20 +65,7 @@ const Contact = () => {
               <FontAwesomeIcon icon={faPhone} className="mr-4 text-yellow-400" />
               <p>+971543600230</p>
             </div>
-            <div className="flex space-x-4">
-              <a href="https://github.com/rashida-mahroof" target='_blank' className="text-2xl text-gray-400 hover:text-yellow-400">
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-              <a href="https://www.linkedin.com/in/rashida-mahroof-b40b52169/" target='_blank' className="text-2xl text-gray-400 hover:text-yellow-400">
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a href="https://www.facebook.com/rashida.mahroof.3/" className="text-2xl text-gray-400 hover:text-yellow-400">
-                <FontAwesomeIcon icon={faFacebook} />
-              </a>
-              <a href="https://www.instagram.com/rashida_mahroof/" target='_blank' className="text-2xl text-gray-400 hover:text-yellow-400">
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-            </div>
+            <Socials/>
           </div>
         </div>
         <form onSubmit={handleSubmit} className="flex-1 space-y-4">
@@ -111,4 +113,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
 
