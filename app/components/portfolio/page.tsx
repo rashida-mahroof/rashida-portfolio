@@ -55,7 +55,7 @@ const items = [
 ];
 
 
-const categories = ['All', 'Logo', 'Web Design', 'Graphic Design', 'Mobile Apps', 'Websites'];
+const categories = ['All', 'Logo', 'Graphic Design', 'Mobile Apps', 'Websites'];
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
