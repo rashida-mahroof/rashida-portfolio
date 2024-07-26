@@ -46,7 +46,7 @@ const Contact = () => {
     <div className=" text-white min-h-screen p-10" id='contact'>
        <MainTitle title="GET IN TOUCH" subtitle="CONTACT" />
       <div className="flex flex-col lg:flex-row">
-        <div className="flex-1 mb-6 lg:mb-0">
+        <div className="flex-1 mb-6 lg:mb-0 animate-on-scroll" data-animation="animate-slideRight">
           <h2 className="text-2xl font-bold mb-4">DON'T BE SHY!</h2>
           <p className="mb-4">
             Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or
@@ -68,7 +68,7 @@ const Contact = () => {
             <Socials/>
           </div>
         </div>
-        <form onSubmit={handleSubmit} className="flex-1 space-y-4">
+        <form onSubmit={handleSubmit} className="flex-1 space-y-4 animate-on-scroll" data-animation="animate-slideLeft">
           <input
             type="text"
             name="name"

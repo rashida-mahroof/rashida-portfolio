@@ -37,8 +37,8 @@ const AboutSection = () => {
     <section id="about" className=" text-white py-20">
       <div className="container mx-auto px-4">
       <MainTitle title="ABOUT ME" subtitle="RESUME" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className='text-center md:text-start'>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 " >
+          <div className='text-center md:text-start animate-on-scroll' data-animation="animate-slideRight">
             <h3 className="text-2xl font-semibold mb-5">PERSONAL INFOS</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
               {personalInfo.map((info, index) => (
@@ -48,14 +48,16 @@ const AboutSection = () => {
                 </div>
               ))}
             </div>
-            <Link href='/rashida_cv.pdf' className="mt-8 bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition duration-300 uppercase tracking-wider flex items-center">
+            <Link href='/rashida_cv.pdf' className='text-center flex justify-center md:justify-start'>
+            <button  className="text-center mt-8 bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition duration-300 uppercase tracking-wider flex items-center">
               Download CV
               <svg className="w-4 h-4 ml-2 animate-bounce" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
+            </button>
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-6 animate-on-scroll" data-animation="animate-slideLeft">
       {stats.map((stat, index) => (
         <div
           key={index}

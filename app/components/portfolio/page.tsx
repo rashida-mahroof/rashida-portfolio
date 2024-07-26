@@ -55,7 +55,7 @@ const items = [
 ];
 
 
-const categories = ['All', 'Logo', 'Graphic Design', 'Mobile Apps', 'Websites'];
+const categories = [ 'All','Mobile Apps', 'Websites', 'Graphic Design', 'Logo',];
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -76,10 +76,10 @@ const Portfolio = () => {
           </button>
         ))}
       </div>
-      <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-4 grid-cols-2 gap-4 animate-on-scroll" data-animation="animate-slideUp">
         {filteredItems.map(item => (
-          <Link href={item.link} target='_blank'>
-            <div key={item.id} className="bg-white p-2 rounded h-60 overflow-hidden transform transition-all  duration-300  ">
+          <Link key={item.id} href={item.link} target='_blank'>
+            <div  className="bg-white p-2 rounded h-60 overflow-hidden transform transition-all  duration-300  ">
             <Image
               src={item.src}
               alt={item.category}

@@ -16,7 +16,7 @@ const MainTitle: React.FC<MainTitleProps> = ({ title, subtitle }) => {
 
   return (
     <h2 className="md:text-5xl text-3xl font-bold mb-10 relative text-center">
-      <span className="text-gray-700 absolute -top-10 md:text-8xl opacity-20 text-4xl uppercase">
+      <span className="text-gray-700 absolute -top-10 md:text-8xl opacity-20 text-6xl uppercase">
         {subtitle.toUpperCase()}
       </span>
       <span className="text-white">{firstWord.toUpperCase()}</span>{' '}

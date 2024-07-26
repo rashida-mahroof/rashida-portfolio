@@ -75,9 +75,12 @@ const ExperienceEducationSection: React.FC = () => {
     <section id="experience" className=" text-white py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">EXPERIENCE & EDUCATION</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <TimelineColumn items={experienceItems} />
-          <TimelineColumn items={educationItems} />
+        <div className="grid md:grid-cols-2 gap-8 animate-on-scroll" data-animation="animate-slideUp">
+          <div className='animate-on-scroll' data-animation="animate-slideRight">
+          <TimelineColumn items={experienceItems} /></div>
+          <div className='animate-on-scroll' data-animation="animate-slideLeft">
+          <TimelineColumn items={educationItems} /></div>
+          
         </div>
       </div>
     </section>

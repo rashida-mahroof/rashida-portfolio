@@ -55,7 +55,7 @@ export default function Header() {
 
     return (
         <header id="home" className=" text-white min-h-screen flex items-center relative">
-            <div className="container mx-auto px-4 py-12 lg:py-0 flex flex-col lg:flex-row items-center justify-between animate-slideUp">
+            <div className="container  mx-4 px-4 py-12 lg:py-0 flex flex-col lg:flex-row items-center justify-between animate-slideUp">
                 <div className="lg:w-1/3 mb-8 lg:mb-0 relative w-full max-w-sm group">
                     {/* Background card */}
                     <div className="absolute top-0 left-0 w-full h-full bg-yellow-400 transform -rotate-6 transition-all duration-300 group-hover:rotate-0 group-hover:scale-105"></div>
@@ -79,7 +79,7 @@ export default function Header() {
                     <h1 className="text-3xl md:text-4xl font-bold mb-4">I'M <span className='text-yellow-400'>Rashida Mahroof.</span></h1>
                     <Typewriter
                         options={{
-                            strings: ['Mobile App Developer', 'Web Developer', 'Cross-platform Developer', 'Grahic Designer','Photographer', 'API Developer', 'Full Stack Developer','AI Enthusiasist'],
+                            strings: ['Mobile App Developer', 'Web Developer', 'Cross-platform Developer', 'Grahic Designer', 'API Developer', 'Full Stack Developer','AI Enthusiasist'],
                             autoStart: true,
                             loop: true,
                             
