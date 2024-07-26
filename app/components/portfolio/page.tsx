@@ -23,7 +23,7 @@ import mobileApp4 from '../../../public/portfolio/mobileapps/5.png';
 // import webDesignUntitled from '../../../public/portfolio/webdesigns/Untitled.png';
 import logo1 from '../../../public/portfolio/logos/1.png';
 import logo2 from '../../../public/portfolio/logos/2.png';
-import logo3 from '../../../public/portfolio/logos/logo.png';
+import logo3 from '../../../public/portfolio/logos/Logo.png';
 
 const items = [
   
