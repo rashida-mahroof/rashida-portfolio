@@ -3,29 +3,57 @@ import { useState } from 'react';
 import MainTitle from '../title/page';
 import Image from 'next/image';
 import Link from 'next/link';
+import graphicDesign1 from '../../../public/portfolio/graphicdesigns/1.png';
+import graphicDesign2 from '../../../public/portfolio/graphicdesigns/2.jpg';
+import graphicDesign3 from '../../../public/portfolio/graphicdesigns/3.jpg';
+import graphicDesign4 from '../../../public/portfolio/graphicdesigns/4.jpg';
+import graphicDesign5 from '../../../public/portfolio/graphicdesigns/5.jpg';
+import graphicDesign6 from '../../../public/portfolio/graphicdesigns/6.png';
+import graphicDesign7 from '../../../public/portfolio/graphicdesigns/7.png';
+import graphicDesign8 from '../../../public/portfolio/graphicdesigns/8.jpg';
+import webDesign1 from '../../../public/portfolio/webdesigns/11.png';
+import webDesign2 from '../../../public/portfolio/webdesigns/33.png';
+import webDesign3 from '../../../public/portfolio/webdesigns/22.png';
+import webDesign4 from '../../../public/portfolio/webdesigns/44.png';
+import webDesign5 from '../../../public/portfolio/webdesigns/55.png';
+import mobileApp1 from '../../../public/portfolio/mobileapps/2.png';
+import mobileApp2 from '../../../public/portfolio/mobileapps/3.png';
+import mobileApp3 from '../../../public/portfolio/mobileapps/4.png';
+import mobileApp4 from '../../../public/portfolio/mobileapps/5.png';
+// import webDesignUntitled from '../../../public/portfolio/webdesigns/Untitled.png';
+import logo1 from '../../../public/portfolio/logos/1.png';
+import logo2 from '../../../public/portfolio/logos/2.png';
+import logo3 from '../../../public/portfolio/logos/logo.png';
+
 const items = [
   
-  { id: 3, category: 'Graphic Design', src: '/portfolio/graphicdesigns/1.png' , link:''},
-  { id: 3, category: 'Graphic Design', src: '/portfolio/graphicdesigns/2.jpg' , link:''},
-  { id: 3, category: 'Graphic Design', src: '/portfolio/graphicdesigns/3.jpg' , link:''},
-  { id: 3, category: 'Graphic Design', src: '/portfolio/graphicdesigns/4.jpg' , link:''},
-  { id: 3, category: 'Graphic Design', src: '/portfolio/graphicdesigns/5.jpg' , link:''},
-  { id: 3, category: 'Graphic Design', src: '/portfolio/graphicdesigns/6.png' , link:''},
-  { id: 3, category: 'Graphic Design', src: '/portfolio/graphicdesigns/7.png' , link:''},
-  { id: 3, category: 'Graphic Design', src: '/portfolio/graphicdesigns/8.jpg' , link:''},
-  { id: 3, category: 'Websites', src: '/portfolio/webdesigns/1.png' , link:'/www.hokybo.com'},
-  { id: 3, category: 'Websites', src: '/portfolio/webdesigns/2.png' , link:''},
-  { id: 3, category: 'Websites', src: '/portfolio/webdesigns/3.png' , link:''},
-  { id: 3, category: 'Websites', src: '/portfolio/webdesigns/4.png' , link:''},
-  { id: 3, category: 'Websites', src: '/portfolio/webdesigns/5.png' , link:'/https://madariz.org/'},
-  { id: 3, category: 'Mobile Apps', src: '/portfolio/mobileapps/1.png' , link:''},
-  { id: 1, category: 'Web Design', src: '/portfolio/webdesigns/Untitled.png' , link:''},
-  { id: 1, category: 'Logo', src: '/portfolio/logos/1.png' , link:''},
-  { id: 1, category: 'Logo', src: '/portfolio/logos/2.png' , link:''},
-  { id: 1, category: 'Logo', src: '/portfolio/logos/logo.png' , link:''},
+  { id: 20, category: 'Mobile Apps', src: mobileApp2, link: '' },
+  { id: 21, category: 'Mobile Apps', src: mobileApp3, link: '' },
+  { id: 22, category: 'Mobile Apps', src: mobileApp4, link: '' },
+  { id: 9, category: 'Websites', src: webDesign1, link: 'http://www.hokybo.com' },
+  { id: 10, category: 'Websites', src: webDesign2, link: 'https://rashida-mahroof.github.io/business-solutions/' },
+  { id: 11, category: 'Websites', src: webDesign3, link: 'https://rashida-mahroof.github.io/charcoal/' },
+  { id: 12, category: 'Websites', src: webDesign4, link: 'https://rashida-mahroof.github.io/oscarevents/' },
+  { id: 13, category: 'Websites', src: webDesign5, link: 'https://madariz.org/' },
+  { id: 19, category: 'Mobile Apps', src: mobileApp1, link: '' },
+  { id: 1, category: 'Graphic Design', src: graphicDesign1, link: '' },
+  { id: 2, category: 'Graphic Design', src: graphicDesign2, link: '' },
+  { id: 3, category: 'Graphic Design', src: graphicDesign3, link: '' },
+  { id: 4, category: 'Graphic Design', src: graphicDesign4, link: '' },
+  { id: 5, category: 'Graphic Design', src: graphicDesign5, link: '' },
+  { id: 6, category: 'Graphic Design', src: graphicDesign6, link: '' },
+  { id: 7, category: 'Graphic Design', src: graphicDesign7, link: '' },
+  { id: 8, category: 'Graphic Design', src: graphicDesign8, link: '' },
 
+  // { id: 14, category: 'Mobile Apps', src: mobileApp1, link: '' },
+  // { id: 15, category: 'Web Design', src: webDesignUntitled, link: '' },
+  { id: 16, category: 'Logo', src: logo1, link: '' },
+  { id: 17, category: 'Logo', src: logo2, link: '' },
+  { id: 18, category: 'Logo', src: logo3, link: '' },
 
+  // { id: 1, category: 'Mobile Apps', src: mobileApp5, link: '' },
 ];
+
 
 const categories = ['All', 'Logo', 'Web Design', 'Graphic Design', 'Mobile Apps', 'Websites'];
 
