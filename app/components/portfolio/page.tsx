@@ -32,6 +32,8 @@ const items = [
   { id: 20, category: 'Mobile Apps', src: mobileApp2, link: '' },
   { id: 21, category: 'Mobile Apps', src: mobileApp3, link: '' },
   { id: 22, category: 'Mobile Apps', src: mobileApp4, link: '' },
+  { id: 23, category: 'Mobile Apps', src: mobileApp5, link: '' },
+  { id: 24, category: 'Mobile Apps', src: mobileApp6, link: '' },
   { id: 9, category: 'Websites', src: webDesign1, link: 'http://www.hokybo.com' },
   { id: 10, category: 'Websites', src: webDesign2, link: 'https://rashida-mahroof.github.io/business-solutions/' },
   { id: 11, category: 'Websites', src: webDesign3, link: 'https://rashida-mahroof.github.io/charcoal/' },
@@ -46,8 +48,7 @@ const items = [
   { id: 6, category: 'Graphic Design', src: graphicDesign6, link: '' },
   { id: 7, category: 'Graphic Design', src: graphicDesign7, link: '' },
   { id: 8, category: 'Graphic Design', src: graphicDesign8, link: '' },
-  { id: 22, category: 'Mobile Apps', src: mobileApp5, link: '' },
-  { id: 22, category: 'Mobile Apps', src: mobileApp6, link: '' },
+
   // { id: 14, category: 'Mobile Apps', src: mobileApp1, link: '' },
   // { id: 15, category: 'Web Design', src: webDesignUntitled, link: '' },
   { id: 16, category: 'Logo', src: logo1, link: '' },
