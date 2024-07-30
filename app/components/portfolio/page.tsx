@@ -20,6 +20,8 @@ import mobileApp1 from '../../../public/portfolio/mobileapps/2.png';
 import mobileApp2 from '../../../public/portfolio/mobileapps/3.png';
 import mobileApp3 from '../../../public/portfolio/mobileapps/4.png';
 import mobileApp4 from '../../../public/portfolio/mobileapps/5.png';
+import mobileApp5 from '../../../public/portfolio/mobileapps/6.png';
+import mobileApp6 from '../../../public/portfolio/mobileapps/7.png';
 // import webDesignUntitled from '../../../public/portfolio/webdesigns/Untitled.png';
 import logo1 from '../../../public/portfolio/logos/1.png';
 import logo2 from '../../../public/portfolio/logos/2.png';
@@ -44,7 +46,8 @@ const items = [
   { id: 6, category: 'Graphic Design', src: graphicDesign6, link: '' },
   { id: 7, category: 'Graphic Design', src: graphicDesign7, link: '' },
   { id: 8, category: 'Graphic Design', src: graphicDesign8, link: '' },
-
+  { id: 22, category: 'Mobile Apps', src: mobileApp5, link: '' },
+  { id: 22, category: 'Mobile Apps', src: mobileApp6, link: '' },
   // { id: 14, category: 'Mobile Apps', src: mobileApp1, link: '' },
   // { id: 15, category: 'Web Design', src: webDesignUntitled, link: '' },
   { id: 16, category: 'Logo', src: logo1, link: '' },
