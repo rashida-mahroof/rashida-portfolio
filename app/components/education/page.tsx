@@ -9,6 +9,18 @@ interface TimelineItem {
 
 const experienceItems: TimelineItem[] = [
   {
+    year: 'AUG 2024 - PRESENT',
+    title: "AMBASSODOR",
+    organization: "GOOGLE'S WOMEN TECH MAKERS",
+    description: '',
+  },
+  {
+    year: 'AUG 2024 - SEP 2024',
+    title: 'FLUTTER DEVELOPER',
+    organization: 'BEAMS IT SOLUTIONS',
+    description: '',
+  },
+  {
     year: 'JUNE 2023 - APR 2024',
     title: 'LEAD FLUTTER DEVELOPER',
     organization: 'SCREL INFO PVT LTD',
@@ -32,12 +44,7 @@ const experienceItems: TimelineItem[] = [
     organization: 'IQ TECH SOLUTIONS',
     description: '',
   },
-  {
-    year: 'JUNE 2019 - DEC 2020',
-    title: 'GRAPHIC DESIGNER AND DIGITAL MARKETING',
-    organization: 'A2Z CLAENING COMPANY',
-    description: '',
-  },
+ 
 ];
 
 const educationItems: TimelineItem[] = [

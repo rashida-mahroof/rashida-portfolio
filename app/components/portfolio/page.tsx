@@ -29,7 +29,7 @@ import logo3 from '../../../public/portfolio/logos/Logo.png';
 
 const items = [
   
-  { id: 20, category: 'Mobile Apps', src: mobileApp2, link: '' },
+  { id: 20, category: 'Mobile Apps', src: mobileApp2, link: 'https://play.google.com/store/apps/details?id=com.vlogfied.vlogfied&hl=en' },
   { id: 21, category: 'Mobile Apps', src: mobileApp3, link: '' },
   { id: 22, category: 'Mobile Apps', src: mobileApp4, link: '' },
   { id: 23, category: 'Mobile Apps', src: mobileApp5, link: '' },
